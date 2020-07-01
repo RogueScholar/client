@@ -1,0 +1,39 @@
+[Desktop Entry]
+Type=Application
+Version=1.1
+Name=Keybase
+GenericName=Secure Messaging + Filesharing
+Comment=Message friends or groups, share files, create git repos, store cryptocurrency, all encrypted by Keybase
+TryExec=/opt/keybase/Keybase
+Exec=run_keybase %u
+Icon=keybase
+Categories=Network;InstantMessaging;Chat;FileTransfer;
+Keywords=chat;git;encrypt;kbfs;team;stellar;lumen;
+MimeType=x-scheme-handler/keybase;x-scheme-handler/web+stellar;application/x-saltpack;
+StartupNotify=true
+StartupWMClass=Keybase
+Terminal=false
+DBusActivatable=false
+NoDisplay=false
+Hidden=false
+Actions=Minimized;KBFSOnly;NoKBFS;Kill;
+
+[Desktop Action Minimized]
+Name=Start minimized to tray
+Icon=keybase
+Exec=run_keybase -a
+
+[Desktop Action KBFSOnly]
+Name=Start KBFS only
+Icon=keybase
+Exec=run_keybase -g
+
+[Desktop Action NoKBFS]
+Name=Start client without KBFS
+Icon=keybase
+Exec=run_keybase -f
+
+[Desktop Action Kill]
+Name=Quit all Keybase services
+Icon=keybase
+Exec=run_keybase -k
