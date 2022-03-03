@@ -131,7 +131,7 @@
         "simple-markdown": "0.7.3",
         "typedarray-to-buffer": "4.0.0",
         "unidecode": "0.1.8",
-        "url-parse": "1.5.4",
+        "url-parse": "1.5.9",
         "use-memo-one": "1.1.2",
         "util": "0.12.4"
     },
